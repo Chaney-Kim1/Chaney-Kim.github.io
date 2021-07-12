@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Hieee_yoni"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Chaeyeon-KIM"
-description              : "내가 적고 내가 자극받는 "
+name                     : "김채연"
+description              : "Hieee_yoni's Blog"
 url                      : "https://Chaney-Kim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,9 +101,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "chaeyeon-KIM"
+  name             : "김채연"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "나야"
+  bio              : "JSP, DB, TOEIC 조지러 출동"
   location         : "KOREA"
   email            : "cy0804bamboo@naver.com"
   links:
