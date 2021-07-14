@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "김채연"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : #"/assets/images/bio-photo.jpg"
   bio              : "JSP, DB, TOEIC 조지러 출동"
   location         : "KOREA"
   email            : "cy0804bamboo@naver.com"
