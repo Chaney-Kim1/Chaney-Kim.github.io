@@ -2,6 +2,6 @@
 
 layout: category
 
-title: day 2 day
+title: day2day
 
 ---
