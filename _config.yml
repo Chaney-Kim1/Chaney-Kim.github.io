@@ -103,9 +103,9 @@ analytics:
 # Site Author
 author:
   name             : "김채연"
-  avatar           : #"/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/chaeyeon.jpg"
   bio              : "JSP, DB, TOEIC 조지러 출동"
-  location         : "KOREA"
+  location         : "Sejong, KOREA"
   email            : "cy0804bamboo@naver.com"
   links:
     - label: "Email"
