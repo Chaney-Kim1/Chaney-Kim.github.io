@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: https://chaney-kim.github.io/
   - title: "Categories"
     url: /categories/
   # - title: "About"
