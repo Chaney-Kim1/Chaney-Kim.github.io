@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air" "aqua", "contrast", "dark", "dirt",
 locale                   : "ko-KR"
 title                    : "Hieee_yoni"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "HI!"
 name                     : "김채연"
 description              : "Hieee_yoni's Blog"
 url                      : "https://Chaney-Kim.github.io"
@@ -104,13 +104,13 @@ analytics:
 author:
   name             : "김채연"
   avatar           : "/assets/images/chaeyeon.jpg"
-  bio              : "JSP, DB, TOEIC 조지러 출동"
+  bio              : "전공 혼쭐내러 출동"
   location         : "Sejong, KOREA"
   email            : "cy0804bamboo@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "gmail:cy0804bamboo@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
