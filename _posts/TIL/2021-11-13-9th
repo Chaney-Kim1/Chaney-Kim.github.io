@@ -1,0 +1,143 @@
+---
+layout: single
+title: "TIL) WEEK 7"
+categories: TIL
+toc: true
+toc_sticky: true
+tags: [PYTHON, STUDY]
+---
+
+Algorithm Study Week 7 (Jupyter)
+
+__________________________________________________________________________________
+
+## 1. 점프와 순간이동 (Summer/Winter Cording ~2018)
+
+__문제 URL__
+
+[1번문제] (https://programmers.co.kr/learn/courses/30/lessons/12980)
+
+__코드__
+
+```
+# 2로 나눠가면서 구해야하는데 2로 안나눠지면 점프 필요 -> 건전지 사용
+# 이전위치 *2로 현재위치에 도달할 수 있으면 건전지 사용 안해도 됨
+def solution(N):
+    count = 0
+    while N > 0:
+        q, r = divmod(N, 2) # 몫, 나머지
+        N = q # 입력받은 n값이 0이 될 때까지, n을 2로 나눈 몫과 나머지를 구함, 1일때만 count
+        if r != 0:
+            count += 1
+    return count
+print(solution(5))
+```
+__________________________________________________________________________________
+
+## 2. 이진 변환 반복하기 (월간 코드 챌린지)
+
+__문제 URL__
+
+[2번문제] (https://programmers.co.kr/learn/courses/30/lessons/70129)
+
+__코드__
+
+```
+def solution(s):
+    ans = [0, 0] # 이진 변환 횟수, 0의 개수
+
+    while(s != '1'): # s 에 0이 있으면
+        ans[0] += 1 # 변환 횟수 추가
+        n = '' # 빈 문자열 생성
+        for num in s:
+            if num == '1':
+                n += '1' # 1만 담음
+            else: ans[1] += 1 # 0이면 개수 추가
+        print(n) # 1111 -> len(n) = 4
+        s = bin(len(n))[2:] # 100, 앞에 0b 없애줘야함
+        print("s", s)
+    return ans
+
+solution("0111010")
+```
+__________________________________________________________________________________
+
+## 3. 나머지가 1이 되는 수 찾기 (월간 코드 챌린지 시즌 3)
+
+__문제 URL__
+
+[3번문제] (https://programmers.co.kr/learn/courses/30/lessons/87389)
+
+__코드__
+
+```
+def solution(n):
+    for i in range(1, n):
+        if (n % i == 1):
+            return i
+solution(10)
+solution(12)
+```
+__________________________________________________________________________________
+
+## 4. [1차] 캐시 (2018 KAKAO BLIND RECRUITMENT)
+
+__문제 URL__
+
+[4번문제] (https://programmers.co.kr/learn/courses/30/lessons/17680)
+
+__코드__
+
+```
+def solution(cacheSize, cities):
+    cache = [] # 빈 리스트를 만듦
+    time = 0
+    for city in cities:
+        city = city.lower() # 대소문자구분을 하지 않으므로 모두 소문자로 변경해서 저장
+        if cacheSize:
+            if not city in cache:# cache에 city가 있는지 확인
+                if len(cache) == cacheSize: # 용량없음
+                    cache.pop(0) # 하나 제거함
+                cache.append(city) # 공간 하나 생겼으니 저장
+                time += 5 # 5초더함
+                cache.pop(cache.index(city)) # 이전에 같은 이름의 city가 존재, 가장 최근에 참조되었음, 삭제후다시 append
+                cache.append(city)
+                time += 1 # 1초
+        else: # cache miss 의 실행시간 5초
+            time += 5 # 5초 더해줌
+    return time
+
+print(solution(5, ["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"]))
+```
+__________________________________________________________________________________
+
+
+## 5. 모음 사전 (위클리 챌린지)
+
+__문제 URL__
+
+[5번문제] (https://programmers.co.kr/learn/courses/30/lessons/84512)
+
+__코드__
+
+```
+def solution(word):
+    dic = [] # 빈 딕셔너리, 다 넣어줄거임
+    def add_word(s):
+        if len(s) == 6: # 길이가 6이 될 순 없으니
+            return # 반환
+        dic.append(s)
+        
+        for i in ('A', 'E', 'I', 'O', 'U'):
+            print(i)
+            add_word(s + i)
+    
+    for i in ('A', 'E', 'I', 'O', 'U'): # 맨 처음 실행되는 문장, 반복문을 돌며 add_word('A'), add_word('E') ... add_word('U')를 실행한다.
+        print(i)
+        add_word(i)
+ 
+    return dic.index(word) + 1
+
+solution("AAAAE")
+```
+__________________________________________________________________________________
