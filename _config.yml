@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air" "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air" "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "김채연"
   avatar           : "/assets/images/chaeyeon.jpg"
-  bio              : "전공 혼쭐내러 출동"
+  bio              : "이것저것"
   location         : "Sejong, KOREA"
   email            : "cy0804bamboo@naver.com"
   links:
