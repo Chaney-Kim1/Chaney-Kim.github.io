@@ -31,12 +31,8 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 120
 comments:
-  provider               :  "utterances"
+  provider               :  # "utterances"
                             #false "disqus"  (default),"", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  utterances:
-  theme: "github-dark-orange"
-  issue-term: "pathname"
-  label: "comment"
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- "Chaney-Kim-github-io" 
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
