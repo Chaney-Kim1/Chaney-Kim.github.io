@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air" "aqua", "contrast", "dark", "dirt",
 locale                   : "ko-KR"
 title                    : "Hieee_yoni"
 title_separator          : "-"
-subtitle                 : "HI!"
+subtitle                 : "놀려고 돈번다"
 name                     : "김채연"
 description              : "Hieee_yoni's Blog"
 url                      : "https://Chaney-Kim.github.io"
@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "김채연"
   avatar           : "/assets/images/chaeyeon.jpg"
-  bio              : "전공 혼쭐내러 출동"
-  location         : "Sejong, KOREA"
+  bio              : "해밀동 몽키스패너 REAL 일상"
+  location         : "Seoul, KOREA"
   email            : "cy0804bamboo@naver.com"
   links:
     - label: "Email"
