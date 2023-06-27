@@ -31,9 +31,10 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 120
 comments:
-  provider               :  # "utterances"
+  provider               : "disqus" 
                             #false "disqus"  (default),"", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- "Chaney-Kim-github-io" 
+  disqus: 
+    shortname            : "chaney-kim-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- "Chaney-Kim-github-io" 
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -291,3 +292,11 @@ defaults:
       toc: true
       sidebar:
         nav: main-sidebar
+  # _pages
+  - scope:
+      path: "_pages"
+      type: page
+    values:
+      layout: single
+      author_profile: true
+      
